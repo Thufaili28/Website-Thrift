@@ -1,0 +1,244 @@
+*{
+   padding: 0%;
+   margin: 0%;
+   font-family: sans-serif;
+}
+a{
+   color: inherit;
+   text-decoration: none;
+}
+.medsos{
+   padding: 5px 0;
+   background-color: #3ab8c4;
+}
+.medsos ul li{
+   display: inline-block;
+   color: white;
+   margin-right: 10px;
+   font-size: 15px;
+}
+.container{
+   width: 80%;
+   margin: 0 auto;
+}
+.container:after{
+   content: " ";
+   display: block;
+   clear: both;
+}
+header{
+   background-color: white;
+}
+header h1{
+   float: left;
+   padding: 15px 0;
+   color: #3ab8c4;
+   font-size: xx-large;
+}
+.active{
+   background-color: #3ab8c4;
+   color: #fff; 
+}
+header ul{
+   float: right;
+}
+header ul li{
+   display: inline-block;
+}
+header ul li a{
+   padding: 25px 20px;
+   display: inline-block;
+   font-size: medium;
+}
+header ul li a:hover{
+   background-color: #3ab8c4;
+   color: #fff;
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+body{
+   background: #eee;
+}
+
+.container .title{
+   font-size: 3.5rem;
+   color: #3ab8c4;
+   margin-bottom: 3rem;
+   text-transform: uppercase;
+   text-align: center;
+   padding-top: 50px;
+}
+
+.container .products-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap: 2rem;
+}
+
+.container .products-container .product{
+   text-align: center;
+   padding:3rem 2rem;
+   background: #fff;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   outline: .1rem solid white;
+   outline-offset: -1.5rem;
+   cursor: pointer;
+}
+
+.container .products-container .product:hover{
+   outline: .2rem solid #666;
+   outline-offset: 0;
+}
+
+.container .products-container .product img{
+   height: 25rem;
+}
+
+.container .products-container .product:hover img{
+   transform: scale(.9);
+}
+
+.container .products-container .product h3{
+   padding:.5rem 0;
+   font-size: 2rem;
+   color: #666;
+}
+
+.container .products-container .price{
+   padding: .5rem 0;
+   font-size: large;
+   color: #666;
+}
+
+.container .products-container .product:hover h3{
+   color: #3ab8c4;
+}
+
+.container .products-container .product:hover .price{
+   color: #3ab8c4;
+}
+
+.products-preview{
+   position: fixed;
+   top:0; left:0;
+   min-height: 100vh;
+   width: 100%;
+   background: rgba(0,0,0,.8);
+   display: none;
+   align-items: center;
+   justify-content: center;
+}
+
+.products-preview .preview{
+   display: none;
+   padding:2rem;
+   text-align: center;
+   background: #fff;
+   position: relative;
+   margin:2rem;
+   width: 40rem;
+}
+
+.products-preview .preview.active{
+   display: inline-block;
+}
+
+.products-preview .preview img{
+   height: 30rem;
+}
+
+.products-preview .preview .fa-times{
+   position: absolute;
+   top:1rem; right:1.5rem;
+   cursor: pointer;
+   color:#444;
+   font-size: 4rem;
+}
+
+.products-preview .preview .fa-times:hover{
+   transform: rotate(90deg);
+}
+
+.products-preview .preview h3{
+   color:#666;
+   padding:.5rem 0;
+   font-size: 2.5rem;
+}
+
+.products-preview .preview p{
+   line-height: 1.5;
+   padding:1rem 0;
+   font-size: 1.6rem;
+   color:#666;
+}
+
+.products-preview .preview .price{
+   padding:1rem 0;
+   font-size: 2.5rem;
+   color: #3ab8c4;
+}
+
+.products-preview .preview .buttons{
+   display: flex;
+   gap:1.5rem;
+   flex-wrap: wrap;
+   margin-top: 1rem;
+}
+
+.products-preview .preview .buttons a{
+   flex:1 1 16rem;
+   padding:1rem;
+   font-size: 1.8rem;
+   color:#666;
+   border:.1rem solid #666;
+}
+
+.products-preview .preview .buttons a.cart{
+   background: #444;
+   color:#fff;
+}
+
+.products-preview .preview .buttons a.cart:hover{
+   background: #111;
+}
+
+.products-preview .preview .buttons a.buy:hover{
+   background: #3ab8c4;
+   color:#fff;
+}
+footer{
+   padding: 30px 0;
+   background-color: #b3fae9;
+   color: #ffc300;
+   text-align: center;
+   font-size: medium;
+   margin-top: 50px;
+}
+
+@media (max-width:991px){
+
+   html{
+      font-size: 55%;
+   }
+
+}
+
+@media (max-width:768px){
+
+   .products-preview .preview img{
+      height: 25rem;
+   }
+
+}
+
+@media (max-width:450px){
+
+   html{
+      font-size: 50%;
+   }
+
+}

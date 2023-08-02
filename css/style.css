@@ -1,0 +1,124 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.medsos{
+    padding: 5px 0;
+    background-color: #3ab8c4;
+}
+.medsos ul li{
+    display: inline-block;
+    color: #fff;
+    margin-right: 10px;
+    font-size: 15px;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.container:after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+header{
+    background-color: white;
+}
+header h1{
+    float: left;
+    padding: 15px 0;
+    color: #3ab8c4;
+}
+header ul{
+    float: right;
+}
+header ul li{
+    display: inline-block;
+}
+header ul li a{
+    padding: 25px 20px;
+    display: inline-block;
+}
+header ul li a:hover{
+    background-color: #3ab8c4;
+    color: #fff;
+}
+.active{
+    background-color: #3ab8c4;
+    color: #fff; 
+}
+.banner{
+    height: 60vh;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner::after{
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(55, 230, 247, .6);
+}
+.banner h2{
+    color: #fff;
+    z-index: 1;
+    padding: 20px 25px;
+    border: 3px solid #fff;
+}
+section{
+    padding: 50px 0;
+}
+section h3{
+    text-align: center;
+    padding: 20px 0;
+    color: #3ab8c4;
+    font-size: xx-large;
+}
+.about p{
+    color: #666;
+    word-spacing: 2px;
+    line-height: 25px;
+}
+.contact{
+    background-color: #b3fae9;
+}
+footer{
+    padding: 30px 0;
+    background-color: #b3fae9;
+    color: #ffc300;
+    text-align: center;
+}
+.services{
+    background-color: #f9f9f9;
+}
+.box{
+    color: #3ab8c4;
+}
+.box::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+.box .col-4{
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+}
+.box .col-4 h4{
+    margin: 20px 0;
+}
+
